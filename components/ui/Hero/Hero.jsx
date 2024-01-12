@@ -1,8 +1,8 @@
 import GradientWrapper from "@/components/GradientWrapper"
+import LayoutEffect from "@/components/LayoutEffect"
+import HeroImg from "@/public/images/hero.svg"
 import Image from "next/image"
 import NavLink from "../NavLink"
-import HeroImg from "@/public/images/hero.svg"
-import LayoutEffect from "@/components/LayoutEffect"
 
 const Hero = () => (
     <section>
@@ -20,7 +20,7 @@ const Hero = () => (
                                 backgroundImage: "linear-gradient(179.1deg, #FFFFFF 0.77%, rgba(255, 255, 255, 0) 182.09%)"
                             }}
                         >
-                            <span className="text-8xl">Your co-pilot for your product </span> 
+                            <span className="text-8xl">Co-pilot for your product </span>
                         </h1>
                         <p className="max-w-xl mx-auto text-gray-300">
                             Gain control of your business's growth with Mailgo's comprehensive marketing, automation, and email marketing platform.

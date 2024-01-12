@@ -1,6 +1,6 @@
-import LayoutEffect from "@/components/LayoutEffect";
-import SectionWrapper from "@/components/SectionWrapper";
-import Button from "../Button";
+import LayoutEffect from "@/components/LayoutEffect"
+import SectionWrapper from "@/components/SectionWrapper"
+import Button from "../Button"
 
 const Pricing = () => {
 
@@ -48,7 +48,7 @@ const Pricing = () => {
                 "Personalized support",
             ],
         },
-    ];
+    ]
 
     const mostPopPricingBg = "radial-gradient(130.39% 130.39% at 51.31% -0.71%, #1F2937 0%, rgba(31, 41, 55, 0) 100%)"
 
@@ -117,7 +117,7 @@ const Pricing = () => {
                 </div>
             </LayoutEffect>
         </SectionWrapper>
-    );
-};
+    )
+}
 
 export default Pricing

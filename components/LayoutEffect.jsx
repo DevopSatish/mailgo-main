@@ -1,5 +1,5 @@
 import { useInView } from "framer-motion"
-import { cloneElement, useRef } from "react";
+import { cloneElement, useRef } from "react"
 
 const LayoutEffect = ({ children,
     className,

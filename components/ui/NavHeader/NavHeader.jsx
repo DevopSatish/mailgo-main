@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Brand from "../Brand";
+import Link from "next/link"
+import Brand from "../Brand"
 
 const NavHeader = ({ onClick, state, menuBtnEl }) => (
     <div className="flex items-center justify-between py-5 md:block">

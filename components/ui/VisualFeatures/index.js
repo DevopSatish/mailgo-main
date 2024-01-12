@@ -1,1 +1,1 @@
-export { default } from "./VisualFeatures";
+export { default } from "./VisualFeatures"

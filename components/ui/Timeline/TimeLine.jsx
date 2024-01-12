@@ -1,39 +1,36 @@
-import React from 'react';
+import React from 'react'
 
 import {
     VerticalTimeline,
     VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faBriefcase,
-    faSchool,
-    faStar,
-    faMicrochip,
     faDisplay,
-    faGear
-} from '@fortawesome/free-solid-svg-icons';
-import Image from "next/image"
+    faGear,
+    faMicrochip,
+    faStar
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const workIcon = {
     icon: <FontAwesomeIcon icon={faGear} />,
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#fff' },
-};
+}
 const schoolIcon = {
     icon: <FontAwesomeIcon icon={faMicrochip} />,
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#fff' },
-};
+}
 const TrainIcon = {
     icon: <FontAwesomeIcon icon={faDisplay} />,
     iconStyle: { background: 'rgb(0, 0, 0)', color: '#fff' },
-};
+}
 const starIcon = {
     icon: <FontAwesomeIcon icon={faStar} />,
     iconStyle: { background: 'rgb(16, 204, 82)', color: '#fff' },
-};
+}
 
 function App() {
     const timeline = [
@@ -64,7 +61,7 @@ function App() {
 
         },
         { icon: starIcon },
-    ];
+    ]
 
     return (
         <div className="App">
@@ -73,12 +70,12 @@ function App() {
                 {timeline.map((t, i) => {
                     const contentStyle =
                         i === 0
-                            ? { background: 'rgb(255 255 255)', color: '#fff' }
-                            : undefined;
+                            ? { background: 'grey', color: '#fff' }
+                            : undefined
                     const arrowStyle =
                         i === 0
-                            ? { borderRight: '7px solid  rgb(168 85 247)' }
-                            : undefined;
+                            ? { borderRight: '8px solid  rgb(168 85 247)' }
+                            : undefined
 
                     return (
                         <VerticalTimelineElement
@@ -91,9 +88,9 @@ function App() {
                         >
                             {t.title ? (
                                 <React.Fragment>
-                                    <h3 className="vertical-timeline-element-title text-2xl font-black text-slate-900">{t.title}</h3>
+                                    <h3 className="vertical-timeline-element-title text-2xl font-semibold text-slate-400">{t.title}</h3>
                                     {t.subtitle && (
-                                        <h4 className="vertical-timeline-element-subtitle text-black">
+                                        <h4 className="vertical-timeline-element-subtitle text-slate-300">
                                             {t.subtitle}
                                         </h4>
                                     )}
@@ -102,11 +99,11 @@ function App() {
                                 </React.Fragment>
                             ) : undefined}
                         </VerticalTimelineElement>
-                    );
+                    )
                 })}
             </VerticalTimeline>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App

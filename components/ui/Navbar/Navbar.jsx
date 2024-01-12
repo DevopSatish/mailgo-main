@@ -17,9 +17,9 @@ const Navbar = () => {
 
     useEffect(() => {
         document.onclick = (e) => {
-            const target = e.target;
-            if (!menuBtnEl.current.contains(target)) setState(false);
-        };
+            const target = e.target
+            if (!menuBtnEl.current.contains(target)) setState(false)
+        }
     }, [])
 
     return (

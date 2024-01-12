@@ -22,6 +22,7 @@
     "lucide-react": "^0.309.0",
     "next": "13.1.6",
     "react": "18.2.0",
+    "react-chrono": "^2.4.0",
     "react-dom": "18.2.0",
     "react-fontawesome": "^1.7.1",
     "react-timeline-animation": "^1.2.3",
